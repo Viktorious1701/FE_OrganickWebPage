@@ -1,0 +1,180 @@
+h1 {
+  color: #274c5b;
+  font-family: "Roboto";
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 1200;
+  line-height: normal;
+  margin: 0;
+}
+h2 {
+  color: #274c5b;
+  font-family: "Roboto";
+  font-size: 3.5vw;
+  font-style: normal;
+  font-weight: 1200;
+  line-height: normal;
+  margin: 0;
+}
+h3 {
+  color: #274c5b;
+  font-family: "Roboto";
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 1200;
+  line-height: normal;
+  margin: 0;
+}
+h4 {
+  color: #274c5b;
+  font-family: "Roboto";
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 1200;
+  line-height: normal;
+  margin: 0;
+}
+h5 {
+  color: #274c5b;
+  font-family: "Roboto";
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 1200;
+  line-height: normal;
+  margin: 0;
+}
+h6 {
+  color: #274c5b;
+  font-family: "Roboto";
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 1200;
+  line-height: normal;
+  margin: 0;
+}
+p {
+  color: #525c60;
+  font-family: "Open Sans";
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%; /* 29.772px */
+  margin: 0;
+}
+/*-------------------BUTTON---------------*/
+.btn1 {
+  display: flex;
+  padding: 2vw 3.8vw;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  border-radius: 16px;
+  background: #274c5b;
+
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.btn1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn1:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  display: flex;
+  padding: 2vw 3vw;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw 0;
+  border-radius: 16px;
+  background: #efd372;
+  border: none;
+  gap: 10px;
+}
+.btn h6 {
+  margin: 0 0;
+  color: #274c5b;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.btn img{
+  width: 1vw;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.default-btn {
+  display: flex;
+  padding: 2vw 3vw;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid #274c5b;
+  background: #fff;
+}
+.default-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.default-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.default-btn h6 {
+  margin: 0 0;
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/*Color word */
+.color1 {
+  color: #274c5b;
+}
+.color2 {
+  color: #7eb693;
+}
+.color3 {
+  color: #efd372;
+}
+.color4 {
+  color: #d4d4d4;
+}
+.color5 {
+  color: #eff6f1;
+}
+.color6 {
+  color: #525c60;
+}
+.color7 {
+  color: #f9f8f8;
+}
+.Yellowtail {
+  font-family: "Yellowtail", cursive;
+  font-size: 2.3vw;
+  font-weight: 400;
+}
+.bold{
+  font-weight: 700;
+}

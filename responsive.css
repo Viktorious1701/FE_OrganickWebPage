@@ -1,0 +1,436 @@
+/*RESPONSIVE*/
+/*RESPONSIVE*/
+@media only screen and (max-width: 340px) {
+  /* default value*/
+ 
+    :root {
+        font-size: 30%; /* Adjust the font size for smaller screens if needed */
+      }
+      .body{
+        overflow-x: hidden;
+      }
+      .container {
+        max-width: 100%; /* Adjust container width to fit smaller screens */
+        padding: 0 1rem; /* Add padding to container for better readability on smaller screens */
+      }
+      .btn{
+        padding: 2vw 3vw;
+        border-radius: 1.6rem;
+      }
+      .btn1{
+        padding: 2vw 3vw;
+        border-radius: 1.6rem;
+      }
+      .default-btn{
+        padding: 2vw 3vw;
+        border-radius: 1.6rem;
+      }
+      /* Responsive section*/
+      /*** Header ***/
+      .header {
+        width: 100%;
+        padding: 1rem 0rem; /* Adjust header padding for smaller screens */
+      }
+    
+      .navbar {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        gap: 1rem; /* Add a gap between navigation items for better readability on smaller screens */
+      }
+      
+      .logo-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%; /* Adjust logo-menu width to fit smaller screens */
+      }
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo img{
+        width: 5rem;
+        height: 6rem;
+        padding: 1rem;
+      }
+      .logo h4{
+        font-size: 3rem;
+        margin: 0;
+      }
+      .search-cart {
+        width: 100%; /* Adjust search-cart width to fit smaller screens */
+        justify-content: center; /* Center align search-cart on smaller screens */
+        gap: 2rem;
+      }
+    
+      .search-box {
+        padding: 0.2rem 0.5rem; /* Adjust search-box padding for smaller screens */
+      }
+      .search-box input{
+        font-size: 1.5rem;
+      }
+      .search-box button{
+        display: flex;
+      }
+      /*Banner*/
+      .banner{
+        display: flex;
+        width: 100%;
+        padding-right: 10vw;
+      }
+      .image-container{
+        width: 50%;
+        object-fit: cover;
+      }
+      .content{
+        width: 50%;
+        margin: 0 ;
+        position: absolute;
+        top: 5vw;
+        left: 10vw;
+      }
+      .image-container {
+        margin-left: 40vw;
+      }
+      .title h3{
+        padding: 2rem 0;
+        font-size: 2.5vw;
+      }
+      /*About*/
+     .about{
+      padding-right: 10vw;
+     }
+     .about-icon{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 2rem;
+     }
+     .counters{
+      margin-top: 5rem;
+     }
+     .chart h4{
+      font-size: 2vw;
+     }
+     .chart h6{
+      font-size: 0.8vw;
+      top: 5vw;
+     }
+    /*Subscribe*/
+    .subscribe h6{
+      font-size: 1.8vw;
+    }
+    .subscribe{
+      padding: 0;
+    }
+    .subscribe-content{
+     margin: 8rem 0;
+     padding: 0;
+      left: 0vw;
+      top: 0vw;
+    }
+    .subscribe-text{
+      margin: 0 3vw 0 0;
+    }
+    .subcribe-form form {
+      padding: 0;
+    }
+    .subcribe-form button{
+      padding: 0;
+    }
+    /*blog*/
+    .blog{
+      padding:0;
+    }
+    /*Footer*/
+    .footer-about img{
+      width: 14px;
+    }
+    .about-footer-title{
+      display: flex;
+  
+    }
+}
+@media only screen and (max-width: 600px) and (min-width:340px) {
+  /* default value*/
+ 
+    :root {
+        font-size: 30%; /* Adjust the font size for smaller screens if needed */
+      }
+      .body{
+        overflow-x: hidden;
+      }
+      .container {
+        max-width: 100%; /* Adjust container width to fit smaller screens */
+        padding: 0 1rem; /* Add padding to container for better readability on smaller screens */
+      }
+      .btn{
+        padding: 2vw 3vw;
+        border-radius: 1.6rem;
+      }
+      .btn1{
+        padding: 2vw 3vw;
+        border-radius: 1.6rem;
+      }
+      .default-btn{
+        padding: 2vw 3vw;
+        border-radius: 1.6rem;
+      }
+      /* Responsive section*/
+      /*** Header ***/
+      .header {
+        width: 100%;
+        padding: 1rem 0rem; /* Adjust header padding for smaller screens */
+      }
+    
+      .navbar {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        gap: 1rem; /* Add a gap between navigation items for better readability on smaller screens */
+      }
+      
+      .logo-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%; /* Adjust logo-menu width to fit smaller screens */
+      }
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo img{
+        width: 5rem;
+        height: 6rem;
+        padding: 1rem;
+      }
+      .logo h4{
+        font-size: 3rem;
+        margin: 0;
+      }
+      .search-cart {
+        width: 100%; /* Adjust search-cart width to fit smaller screens */
+        justify-content: center; /* Center align search-cart on smaller screens */
+        gap: 2rem;
+      }
+    
+      .search-box {
+        padding: 0.2rem 0.5rem; /* Adjust search-box padding for smaller screens */
+      }
+      .search-box input{
+        font-size: 1.5rem;
+      }
+      .search-box button{
+        display: flex;
+      }
+      /*Banner*/
+      .banner{
+        display: flex;
+        width: 100%;
+        padding-right: 10vw;
+      }
+      .image-container{
+        width: 50%;
+        object-fit: cover;
+      }
+      .content{
+        width: 50%;
+        margin: 0 ;
+        position: absolute;
+        top: 5vw;
+        left: 10vw;
+      }
+      .image-container {
+        margin-left: 40vw;
+      }
+      .title h3{
+        padding: 2rem 0;
+        font-size: 2.5vw;
+      }
+      /*About*/
+     .about{
+      padding-right: 10vw;
+     }
+     .about-icon{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 2rem;
+     }
+     .counters{
+      margin-top: 5rem;
+     }
+     .chart h4{
+      font-size: 2vw;
+     }
+     .chart h6{
+      font-size: 0.8vw;
+      top: 5vw;
+     }
+    /*Subscribe*/
+    .subscribe h6{
+      font-size: 1.8vw;
+    }
+    .subscribe{
+      padding: 0;
+    }
+    .subscribe-content{
+     margin: 8rem 0;
+     padding: 0;
+      left: 1vw;
+      top: 0vw;
+    }
+    .subscribe-text{
+      margin: 0 3vw 0 0;
+    }
+    /*blog*/
+    .blog{
+      padding:0;
+    }
+    /*Footer*/
+    .footer-about img{
+      width: 14px;
+    }
+    .about-footer-title{
+      display: flex;
+  
+    }
+}
+/*Max width 850*/
+@media only screen and (min-width: 600px) and (max-width:850px ) {
+  :root {
+    font-size: 40%; /* Adjust the font size for smaller screens if needed */
+  }
+  .body{
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 100%; /* Adjust container width to fit smaller screens */
+    padding: 0 1rem; /* Add padding to container for better readability on smaller screens */
+  }
+  .btn{
+    padding: 2vw 3vw;
+    border-radius: 1.6rem;
+  }
+  .btn1{
+    padding: 2vw 3vw;
+    border-radius: 1.6rem;
+  }
+  .default-btn{
+    padding: 2vw 3vw;
+    border-radius: 1.6rem;
+  }
+  /* Responsive section*/
+  /*** Header ***/
+  .header {
+    width: 100%;
+    padding: 1rem 0rem; /* Adjust header padding for smaller screens */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    gap: 1rem; /* Add a gap between navigation items for better readability on smaller screens */
+  }
+  
+  .logo-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%; /* Adjust logo-menu width to fit smaller screens */
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img{
+    width: 5rem;
+    height: 6rem;
+    padding: 1rem;
+  }
+  .logo h4{
+    font-size: 3rem;
+    margin: 0;
+  }
+  .search-cart {
+    width: 100%; /* Adjust search-cart width to fit smaller screens */
+    justify-content: center; /* Center align search-cart on smaller screens */
+    gap: 2rem;
+  }
+
+  .search-box {
+    padding: 0.2rem 0.5rem; /* Adjust search-box padding for smaller screens */
+  }
+  .search-box input{
+    font-size: 1.5rem;
+  }
+  .search-box button{
+    display: flex;
+  }
+  /*Banner*/
+  .banner{
+    display: flex;
+    width: 100%;
+    padding-right: 10vw;
+  }
+  .image-container{
+    width: 50%;
+    object-fit: cover;
+  }
+  .content{
+    width: 50%;
+    margin: 0 ;
+    position: absolute;
+    top: 5vw;
+    left: 10vw;
+  }
+  .image-container {
+    margin-left: 40vw;
+  }
+  .title h3{
+    padding: 2rem 0;
+    font-size: 2.5vw;
+  }
+  /*About*/
+ .about{
+  padding-right: 10vw;
+ }
+ .about-icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+ }
+ .counters{
+  margin-top: 5rem;
+ }
+ .chart h4{
+  font-size: 2vw;
+ }
+ .chart h6{
+  font-size: 0.8vw;
+  top: 5vw;
+ }
+/*Subscribe*/
+.subscribe h6{
+  font-size: 1.8vw;
+}
+/*blog*/
+.blog{
+  padding:0;
+}
+/*Footer*/
+.footer-about img{
+  width: 14px;
+}
+.about-footer-title{
+  display: flex;
+
+}
+.subscribe-text{
+  margin: 0 3vw 0 0;
+}
+}
