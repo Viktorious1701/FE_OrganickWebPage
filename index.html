@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="container">
+        <div class="header">
+          <div class="navbar">
+            <div class="logo-menu">
+              <div class="logo">
+                <img src="./images/Logo.png" alt="logo" />
+                <h4>Organick</h4>
+              </div>
+              <div class="menu">
+                <nav>
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="shop.html">Pages</a>
+                  <a href="shop.html">Shop</a>
+                  <a href="#">Projects</a>
+                  <a href="#">News</a>
+                </nav>
+              </div>
+            </div>
+            <!--search bar/ Form input here-->
+            <div class="search-cart">
+              <div class="search">
+                <form action="#" class="search-box">
+                  <input type="text" id="inputField" placeholder="Type here" />
+                  <button type="submit"><img src="./images/Search Icon.svg" alt="search icon" /></button>
+                </form>
+                  
+              </div>
+              <div class="cart">
+                <form action="#" class="cart-box">
+                  <button type="submit" aria-label="Submit form"><img src="./images/Cart Icon.svg" alt=""></button>
+                  <h6 id="waiting-order">Cart(0)</h6>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Banner-->
+      <div class="banner">
+        <div class="palette">
+          <img id="onion" src="./images/onion.svg" alt="" />
+          <img id="three-leaf" src="./images/three-leaf.svg" alt="" />
+          <img id="strawberry" src="./images/strawberry.svg" alt="" />
+          <img id="two-leaf" src="./images/two-leaf.svg" alt="" />
+          <img src="./images/leaf.svg" id="bot-right-leaf" alt="" />
+          <img src="./images/line-leaf.svg" id="line-leaf" alt="" />
+          <svg
+            id="top-right-leaf"
+            xmlns="http://www.w3.org/2000/svg"
+            width="136"
+            height="246"
+            viewBox="0 0 136 246"
+            fill="none"
+          >
+            <path
+              d="M180.849 -47.9992C197.98 -22.1862 211.276 6.39135 224.497 34.374C230.25 46.5391 235.584 58.9836 239.758 71.8009C243.623 83.7353 246.914 96.4976 246.365 109.124C246.114 115.139 245.262 124.177 238.704 126.786C233.799 128.733 227.763 126.758 222.965 125.368C214.494 122.884 200.551 116.676 194.682 126.89C191.502 132.443 192.181 139.248 193.399 145.29C195.065 153.452 197.874 161.333 200.033 169.327C202.117 177.088 204.305 185.91 202.141 193.889C199.932 201.979 191.983 207.453 183.683 207.516C174.127 207.571 165.446 201.033 158.076 195.675C151.135 190.595 144.089 184.577 135.757 182C127.239 179.385 119.79 183.073 113.571 188.843C105.346 196.437 99.3371 206.139 92.6018 214.996C85.8293 223.918 78.655 231.334 68.4283 236.234C60.5515 240.006 47.3871 244.61 40.4787 236.686C33.0023 228.092 36.6709 213.26 39.4731 203.523C43.0615 191.043 48.2679 179.054 53.0932 167.038C55.0104 162.248 56.881 157.449 58.5006 152.576C58.9355 151.237 57.5302 150.039 56.3126 150.086C47.6873 150.447 38.8552 149.172 30.4959 147.096C22.3226 145.058 12.177 141.878 6.83146 134.845C0.545306 126.585 7.40011 116.761 14.159 111.316C22.9697 104.177 33.8107 99.8352 43.8047 94.6479C53.9566 89.3954 65.3986 82.8773 69.6486 71.5681C70.056 70.4893 69.7755 69.3459 68.6593 68.7612C57.2825 62.6535 44.6905 58.1646 34.5099 50.0476C30.648 46.9829 26.1243 42.6264 26.4883 37.2615C27.0071 29.6559 35.9874 24.0976 41.8665 20.8941C51.9716 15.3906 63.224 12.7497 74.2437 9.82072C82.0021 7.74065 94.0749 6.68881 96.5242 -2.85237C97.0787 -5.03771 96.2313 -6.12473 94.9277 -7.71344C92.6835 -10.5286 93.6169 -14.2576 93.6769 -17.7256C93.6835 -19.585 93.2795 -22.5412 94.3367 -24.2157C95.4866 -26.1133 98.8875 -26.8136 100.829 -27.4661C112.972 -31.6697 125.582 -34.2096 137.995 -37.586C144.87 -39.4794 151.97 -40.6756 158.911 -42.411C166.307 -44.249 173.666 -46.2636 181.025 -48.2783C183.608 -48.9964 182.291 -52.9559 179.69 -52.2657C166.477 -48.6375 153.218 -45.2603 139.828 -42.32C133.463 -40.9291 127.183 -38.9898 120.864 -37.4688C114.546 -35.9479 108.218 -34.3804 102.049 -32.2738C97.5433 -30.7545 91.1502 -29.4658 89.866 -24.0909C89.2286 -21.3662 89.5211 -18.3355 89.4508 -15.5463C89.4 -12.1248 88.7637 -8.67498 90.9708 -5.79475C91.3713 -5.25586 92.469 -4.57812 92.4885 -3.94592C92.6131 -1.40786 88.0073 1.71075 86.1585 2.38178C80.8632 4.34812 74.9344 5.36672 69.4524 6.81259C57.7265 9.89092 45.8615 13.1832 35.535 19.8026C29.9724 23.359 23.7153 28.7104 22.4518 35.5636C21.4927 40.7617 23.9535 45.529 27.3888 49.2821C37.6948 60.5415 53.6338 65.576 66.7686 72.5654C66.4233 71.6267 66.1245 70.6972 65.7792 69.7585C61.4089 81.4304 48.6742 87.522 38.2342 92.7655C27.5713 98.1579 15.6156 103.003 7.28148 111.88C1.42536 118.133 -2.55812 127.368 2.1011 135.425C6.62992 143.287 16.3118 147.22 24.5509 149.779C34.6965 152.959 45.7973 154.735 56.4488 154.27C55.7226 153.424 55.015 152.607 54.2609 151.78C50.2722 163.842 44.8885 175.385 40.4256 187.28C36.3423 198.236 32 210.01 31.9707 221.845C31.9569 231.533 35.3277 242.064 45.7511 244.575C55.4121 246.909 66.0485 242.502 74.3236 237.818C84.2798 232.213 91.2017 223.755 97.9088 214.675C104.551 205.679 110.94 195.037 120.309 188.614C128.926 182.694 137.26 186.359 145.15 191.651C153.356 197.176 160.886 203.919 169.862 208.244C178.131 212.235 187.121 213.082 195.331 208.482C202.287 204.599 206.172 197.809 206.811 189.961C208.217 172.527 198.249 156.768 196.523 139.774C196.014 134.912 196.431 127.455 202.145 125.814C207.19 124.378 213.356 126.91 218.117 128.366C228.505 131.546 242.388 135.494 247.807 122.678C251.772 113.294 250.695 101.794 248.98 92.0517C246.628 78.5819 242.184 65.5417 237.026 52.939C232.026 40.6338 226.236 28.6546 220.233 16.7779C212.663 1.71361 205.558 -13.6208 197.394 -28.3684C193.247 -35.8399 188.849 -43.1437 184.099 -50.252C182.822 -52.5845 179.339 -50.2571 180.849 -47.9992Z"
+              fill="#DBDBDB"
+            />
+          </svg>
+        </div>
+        <div class="content">
+          <div class="title">
+            <h3>
+              <span class="Yellowtail color2">100% Natural Food</span> <br />Choose the
+              best <br>healthier way
+              <br>of life
+            </h3>
+  
+            <button class="btn" onclick="">
+              <h6>Explore Now</h6>
+              <img src="./images/Aerrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+        </div>
+      </div>
+      <!--Offer banner-->
+      <div class="container">
+        <div class="offer-banner">
+          <div class="left-banner">
+            <div class="offer-banner-img">
+              <img src="./images/left-banner.jpg" alt="" />
+            </div>
+            <h4>
+              <span class="Yellowtail">Natural!!</span> <br />
+              Get Garden <br />
+              Fresh Fruits
+            </h4>
+          </div>
+          <div class="right-banner">
+            <div class="offer-banner-img">
+              <img src="./images/right-banner.jpg" alt="" />
+            </div>
+            <h4>
+              <span class="Yellowtail color2">Offer!!</span><br />Get 10% off
+              <br />on Vegetables
+            </h4>
+          </div>
+        </div>
+      </div>
+      <!--About us-->
+      <div class="about">
+        <div class="about-us-img">
+          <img src="./images/about-us.png" alt="" />
+        </div>
+        <div class="about-us-content">
+          <div class="about-heading">
+            <h4>
+              <span class="Yellowtail color2">About Us</span><br />We Believe in
+              Working Accredited Farmers
+            </h4>
+            <p>
+              Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley.
+            </p>
+          </div>
+  
+          <div class="about-points">
+            <div class="point1">
+              <div class="about-icon">
+                <img src="./images/organic-food.png" alt="" />
+              </div>
+              <div class="point1-content">
+                <h6>Organic Foods Only</h6>
+                <p>
+                  Simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum
+                </p>
+              </div>
+            </div>
+            <div class="point1">
+              <div class="about-icon">
+                <img src="./images/mailbox.png" alt="" />
+              </div>
+              <div class="point1-content">
+                <h6>Quality Standards</h6>
+                <p>
+                  Simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="btn1">
+            Shop now <img src="./images/Aerrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <!--Shop-->
+      <div class="shop">
+        <div class="shop-heading">
+          <h4 class="Yellowtail color2">Categories</h4>
+          <h4>Our Products</h4>
+        </div>
+        <div class="shop-content">
+          <!--each row represent 4 products of the shop -->
+          <div class="row1">
+            <!--Brocoli-->
+            <div class="product">
+              <div class="product-title">
+                <h5>Vegetable</h5>
+              </div>
+              <div class="product-img">
+                <img src="./images/brocoli.png" alt="" />
+              </div>
+  
+              <div class="product-content">
+                <h6>Calabrese Broccoli</h6>
+                <div class="product-rating">
+                  <h6><span id="sale-price">$20.00</span>$13.00</h6>
+                  <img src="./images/Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!--Banana-->
+            <div class="product">
+              <div class="product-title">
+                <h5>Fresh</h5>
+              </div>
+              <div class="product-img">
+                <img src="./images/banana.png" alt="" />
+              </div>
+  
+              <div class="product-content">
+                <h6>Fresh Banana Fruites</h6>
+                <div class="product-rating">
+                  <h6><span id="sale-price">$20.00</span>$14.00</h6>
+                  <img src="./images/Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!--White Nuts-->
+            <div class="product">
+              <div class="product-title">
+                <h5>Millets</h5>
+              </div>
+              <div class="product-img">
+                <img src="./images/white-nuts.png" alt="" />
+              </div>
+  
+              <div class="product-content">
+                <h6>White Nuts</h6>
+                <div class="product-rating">
+                  <h6><span id="sale-price">$20.00</span>$15.00</h6>
+                  <img src="./images/Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!--Tomato-->
+            <div class="product">
+              <div class="product-title">
+                <h5>Vegetable</h5>
+              </div>
+              <div class="product-img">
+                <img src="./images/tomato.png" alt="" />
+              </div>
+  
+              <div class="product-content">
+                <h6>Vegan Red Tomato</h6>
+                <div class="product-rating">
+                  <h6><span id="sale-price">$20.00</span>$17.00</h6>
+                  <img src="./images/Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Row 2-->
+          <div class="row1">
+            <div class="product">
+              <div class="product-title">
+                <h5>Health</h5>
+              </div>
+              <div class="product-img">
+                <img src="./images/mung-bean.png" alt="" />
+              </div>
+  
+              <div class="product-content">
+                <h6>Mung Bean</h6>
+                <div class="product-rating">
+                  <h6><span id="sale-price">$20.00</span>$11.00</h6>
+                  <img src="./images/Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-title">
+                <h5>Nuts</h5>
+              </div>
+              <div class="product-img">
+                <img src="./images/hazelnut.png" alt="" />
+              </div>
+  
+              <div class="product-content">
+                <h6>Brown Hazelnut</h6>
+                <div class="product-rating">
+                  <h6><span id="sale-price">$20.00</span>$12.00</h6>
+                  <img src="./images/Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-title">
+                <h5>Fresh</h5>
+              </div>
+              <div class="product-img">
+                <img src="./images/eggs.png" alt="" />
+              </div>
+  
+              <div class="product-content">
+                <h6>Eggs</h6>
+                <div class="product-rating">
+                  <h6><span id="sale-price">$20.00</span>$17.00</h6>
+                  <img src="./images/Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-title">
+                <h5>Fresh</h5>
+              </div>
+              <div class="product-img">
+                <img src="./images/zelco.png" alt="" />
+              </div>
+  
+              <div class="product-content">
+                <h6>Zelco Suji Elaichi Rusk</h6>
+                <div class="product-rating">
+                  <h6><span id="sale-price">$20.00</span>$15.00</h6>
+                  <img src="./images/Star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop-button">
+            <button class="btn1" type="submit">
+              Load More <img src="./images/Aerrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Testimonial-->
+      <div class="testimonial">
+        <div class="left-testimonial">
+          <img src="./images/left-testimonial.png" alt="" />
+        </div>
+        <div class="testimonial-content">
+          <div class="testimonial-title">
+            <h6 class="Yellowtail color2">Testimonial</h6>
+            <h3>What Our Customer Saying?</h3>
+          </div>
+          <div class="testimonial-review">
+            <div class="customer">
+              <img src="./images/customer-face.jpg" alt="" />
+            </div>
+            <div class="testimonial-rating">
+              <img src="./images/Star.svg" alt="" />
+            </div>
+            <p>
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been.
+            </p>
+            <div class="customer-info">
+              <h3>Sara Taylor</h3>
+              <p>Consumer</p>
+              <img src="./images/Navigation.svg" alt="" />
+            </div>
+            <!--4 Circle section-->
+            <div class="counters">
+              <div class="chart">
+                <img src="./images/chart.svg" alt="" />
+                <h4>100%</h4>
+                <h6>Organic</h6>
+              </div>
+              <div class="chart">
+                <img src="./images/chart.svg" alt="" />
+                <h4>285</h4>
+                <h6>Active Products</h6>
+              </div>
+              <div class="chart">
+                <img src="./images/chart.svg" alt="" />
+                <h4>350+</h4>
+                <h6>Organic Orchads</h6>
+              </div>
+              <div class="chart">
+                <img src="./images/chart.svg" alt="" />
+                <h4>25+</h4>
+                <h6>Years of Farming</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-testimonial">
+          <img src="./images/right-testimonial.png" alt="" />
+        </div>
+      </div>
+      <div class="offer-section">
+        <div class="offer">
+          <div class="offer-title">
+            <div class="offer-text">
+              <h6 class="Yellowtail color2">Offer</h6>
+              <h3>We Offer Organic For You</h3>
+            </div>
+            <div class="offer-button">
+              <button class="btn">
+                <h6>View All Product</h6>
+                <img src="./images/Aerrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="offer-content">
+            <div class="row1">
+              <!--Brocoli-->
+              <div class="product">
+                <div class="product-title">
+                  <h5>Vegetable</h5>
+                </div>
+                <div class="product-img">
+                  <img src="./images/brocoli2.png" alt="" />
+                </div>
+  
+                <div class="product-content">
+                  <h6>Mung Bean</h6>
+                  <div class="product-rating">
+                    <h6><span id="sale-price">$20.00</span>$11.00</h6>
+                    <img src="./images/Star.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!--cucumber/hazelnut?-->
+              <div class="product">
+                <div class="product-title">
+                  <h5>Vegetable</h5>
+                </div>
+                <div class="product-img">
+                  <img src="./images/cucumber.png" alt="" />
+                </div>
+  
+                <div class="product-content">
+                  <h6>Brown Hazelnut</h6>
+                  <div class="product-rating">
+                    <h6><span id="sale-price">$20.00</span>$12.00</h6>
+                    <img src="./images/Star.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!--White Nuts-->
+              <div class="product">
+                <div class="product-title">
+                  <h5>Vegetable</h5>
+                </div>
+                <div class="product-img">
+                  <img src="./images/onion.png" alt="" />
+                </div>
+  
+                <div class="product-content">
+                  <h6>Onion</h6>
+                  <div class="product-rating">
+                    <h6><span id="sale-price">$20.00</span>$17.00</h6>
+                    <img src="./images/Star.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!--Cabbage-->
+              <div class="product">
+                <div class="product-title">
+                  <h5>Vegetable</h5>
+                </div>
+                <div class="product-img">
+                  <img src="./images/cabbage.png" alt="" />
+                </div>
+  
+                <div class="product-content">
+                  <h6>Cabbage</h6>
+                  <div class="product-rating">
+                    <h6><span id="sale-price">$20.00</span>$17.00</h6>
+                    <img src="./images/Star.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="who">
+        <div class="who-image">
+          <img src="./images/who-section.jpg" alt="" />
+        </div>
+        <div class="white-layout"></div>
+        <div class="who-content">
+          <div class="who-title">
+            <h6 class="Yellowtail color2">Eco Friendly</h6>
+            <h3>Econis is a Friendly Organic Store</h3>
+          </div>
+          <div class="who-point-section">
+            <div class="who-point">
+              <h4>Start with Our Company First</h4>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptat
+                accusantium doloremque laudantium. Sed ut perspiciatis.
+              </p>
+            </div>
+            <div class="who-point">
+              <h4>Learn How to Grow Yourself</h4>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptat
+                accusantium doloremque laudantium. Sed ut perspiciatis.
+              </p>
+            </div>
+            <div class="who-point">
+              <h4>Farming Strategies of Today</h4>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptat
+                accusantium doloremque laudantium. Sed ut perspiciatis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-box">
+          <img src="./images/organic-juice.jpg" alt="" />
+          <div class="gallery-text">
+            <h4>Organic Juice</h4>
+          </div>
+        </div>
+        <div class="gallery-box">
+          <img src="./images/organic-leaf-food.jpg" alt="" />
+          <div class="gallery-text">
+            <h4>Organic Food</h4>
+          </div>
+        </div>
+        <div class="gallery-box">
+          <img src="./images/cookies.jpg" alt="" />
+          <div class="gallery-text">
+            <h4>Nuts Cookis</h4>
+          </div>
+        </div>
+      </div>
+      <div class="blog">
+        <div class="blog-title">
+          <div class="offer-text">
+            <h6 class="Yellowtail color2">news</h6>
+            <h3>Discover weekly content about organic food, & more</h3>
+          </div>
+          <div class="offer-button">
+            <button class="default-btn">
+              <h6>More News</h6>
+              <img src="./images/Aerrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="green-blog">
+            <img src="images/cabbage-landscape.png" alt="" />
+            <div class="blog-content">
+              <div class="blog-author"><h6>By Rachi Card</h6></div>
+              <div class="blog-text">
+                <h4>The Benefits of Vitamin D & How to Get It</h4>
+                <p>
+                  Simply dummy text of the printing and typesetting industry.
+                  <br />Lorem Ipsum
+                </p>
+              </div>
+              <div class="blog-button">
+                <button class="btn">
+                  <h4>Read More</h4>
+                  <img src="./images/Aerrow.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="red-blog">
+            <img src="images/tomato-landscape.png" alt="" />
+            <div class="blog-content">
+              <div class="blog-author"><h6>By Rachi Card</h6></div>
+              <div class="blog-text">
+                <h4>Our Favourite Summertime Tommeto</h4>
+                <p>
+                  Simply dummy text of the printing and typesetting industry.
+                  <br />Lorem Ipsum
+                </p>
+              </div>
+              <div class="blog-button">
+                <button class="btn">
+                  <h4>Read More</h4>
+                  <img src="./images/Aerrow.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subscribe">
+        <div class="subscribe-banner">
+          <img src="images/subscirbe-banner.jpg" alt="" />
+        </div>
+        <div class="subscribe-content">
+          <div class="subscribe-text">
+            <h3 class="color7">Subscribe to our Newsletter</h3>
+          </div>
+          <div class="subcribe-form">
+            <form action="">
+              <input type="text" id="email-input" placeholder="Your Email Address" />
+              <button type="submit" class="btn1">
+                <h6 class="color7">Subscribe</h6>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-contact">
+          <div class="footer-title">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="footer-content">
+            <p>
+              <span class="bold">Email</span>
+              <br />
+              needhelp@Organia.com
+              <br />
+              <br />
+              <span class="bold">Phone</span>
+              <br />
+              666 888 888
+              <br />
+              <br />
+              <span class="bold">Address</span>
+              <br />
+              88 road, borklyn street, USA
+            </p>
+          </div>
+        </div>
+        <div class="footer-about">
+          <div class="about-footer-title">
+              <img src="./images/Logo.png" alt="logo" />
+              <h4>Organick</h4>
+          </div>
+          <p>
+            Simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum simply dummy text of the printing
+          </p>
+          <div class="social-media">
+            <a href="https://www.instagram.com">
+              <img src="./images/instagram.svg" alt="Instagram">
+            </a>
+            
+            <a href="https://www.facebook.com">
+              <img src="./images/facebook.svg" alt="Facebook">  
+            </a>
+            
+            <a href="https://www.example.com">
+              <img src="./images/X.svg" alt="Example">
+            </a>
+            
+            <a href="https://www.pinterest.com">
+              <img src="./images/pinterest.svg" alt="Pinterest">
+            </a>
+            
+          </div>
+        </div>
+        <div class="footer-util">
+          <div class="util-title">
+            <h3>Utility Pages</h3>
+          </div>
+          <div class="util-content">
+            <ul>
+              <li><p>Style Guide</p></li>
+              <li><p>404 Not Found</p></li>
+              <li><p>Password Protected</p></li>
+              <li><p>Licences</p></li>
+              <li><p>Changelog</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
