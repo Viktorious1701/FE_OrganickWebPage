@@ -40,22 +40,36 @@
               <div class="search">
                 <form action="#" class="search-box">
                   <input type="text" id="inputField" placeholder="Type here" />
-                  <button type="submit"><img src="./images/Search Icon.svg" alt="search icon" /></button>
+                  <button type="submit">
+                    <img src="./images/Search Icon.svg" alt="search icon" />
+                  </button>
                 </form>
-                  
               </div>
               <div class="cart">
-                <form action="#" class="cart-box">
-                  <button type="submit" aria-label="Submit form"><img src="./images/Cart Icon.svg" alt=""></button>
-                  <h6 id="waiting-order">Cart(0)</h6>
-                </form>
+                <div class="cart-box shopping">
+                  <img src="./images/Cart Icon.svg" alt="" />
+                  <h6 class="quantity" id="waiting-order">Cart(0)</h6>
+                  
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
-      <!--Banner-->
+      <!--Card-->
+      <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard">
+          
+        </ul>
+        <div class="checkOut">
+          <div class="total">0</div>
+          <div class="closeShopping">Close</div>
+        </div>
+      </div>
+      
+      <!--Banner HERO-->
       <div class="banner">
         <div class="palette">
           <img id="onion" src="./images/onion.svg" alt="" />
@@ -93,6 +107,7 @@
           </div>
         </div>
         <div class="image-container">
+          <img src="./images/Photo.png" alt="" />
         </div>
       </div>
       <!--Offer banner-->
@@ -178,7 +193,7 @@
           <!--each row represent 4 products of the shop -->
           <div class="row1">
             <!--Brocoli-->
-            <div class="product">
+            <div class="product" >
               <div class="product-title">
                 <h5>Vegetable</h5>
               </div>
@@ -581,8 +596,8 @@
           <div class="subscribe-text">
             <h3 class="color7">Subscribe to our Newsletter</h3>
           </div>
-          <div class="subcribe-form">
-            <form action="">
+          <div class="subscribe-form">
+            <form action="" class="email-input">
               <input type="text" id="email-input" placeholder="Your Email Address" />
               <button type="submit" class="btn1">
                 <h6 class="color7">Subscribe</h6>
@@ -658,5 +673,8 @@
         </div>
       </div>
     </div>
+
+
+    <script src="shopping.js"></script>
   </body>
 </html>
