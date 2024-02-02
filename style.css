@@ -12,20 +12,19 @@ img {
   max-width: 100%;
 }
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 380vh;
-}
-.page-container {
-  display: flex;
-
-  width: 100%;
-  max-height: 1200px;
 }
 .container {
+  display: block;
+  z-index: 5;
+  position: fixed;
   width: 100vw;
   margin: 0 auto;
+  padding: 20px;
+  background-color: white;
 }
 /*Shopping CART LIST */
 .list {
@@ -99,12 +98,6 @@ body {
 /*-------------------Navigation Bar-----------------------*/
 .header {
   display: flex;
-  /*
-   z-index: 9999;
-  position: fixed;
-  */
-
-  margin: 0 auto;
   flex-direction: column;
   align-items: center;
 }
@@ -116,7 +109,6 @@ body {
   align-items: center;
   justify-content: space-between;
   text-wrap: nowrap;
-  background-color: red;
 }
 nav a {
   text-decoration: none;
@@ -168,6 +160,7 @@ nav a:hover::after {
 /*Search and Cart */
 .search-cart {
   display: flex;
+  gap: 1.5rem;
   justify-content: flex-end;
   align-items: center;
 }
@@ -184,6 +177,7 @@ nav a:hover::after {
   align-items: center;
   background-color: #fafafa;
   border-radius: 3.6rem;
+  padding-left: 15px;
 }
 .search-box input {
   padding: 0.5rem;
@@ -316,9 +310,12 @@ nav a:hover::after {
   z-index: 3;
 }
 /*----------------------OFFER BANNER--------------------*/
+.offer-container {
+  display: flex;
+  justify-content: center;
+}
 .offer-banner {
   display: flex;
-  width: 100%;
   align-items: center;
   gap: 3.6rem;
   margin: 10rem 0;
