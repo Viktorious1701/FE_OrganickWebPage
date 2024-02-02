@@ -64,23 +64,26 @@ p {
 /*-------------------BUTTON---------------*/
 .btn1 {
   display: flex;
-  padding: 2vw 3.8vw;
+  padding: 2vw 3vw;
   justify-content: center;
   align-items: center;
-  gap: 5vw;
+  gap: 0.9rem;
   border-radius: 16px;
   background: #274c5b;
+  border: none;
 
   color: #fff;
   font-family: Roboto;
-  font-size: 2vw;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: 200ms ease-in-out;
 }
 .btn1:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .btn1:active {
@@ -98,6 +101,7 @@ p {
   background: #efd372;
   border: none;
   gap: 10px;
+  transition: 200ms ease-in-out;
 }
 .btn h6 {
   margin: 0 0;
@@ -113,6 +117,7 @@ p {
 .btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .btn:active {

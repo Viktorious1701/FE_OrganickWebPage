@@ -355,6 +355,7 @@ nav a:hover::after {
   z-index: -1;
   display: flex;
   padding-top: 5vw;
+  align-items: center;
 }
 .about-us-img {
   width: 50%;
@@ -417,7 +418,7 @@ nav a:hover::after {
   padding: 1vw 8rem;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.2vw;
+  gap: 2rem;
 }
 /*Product */
 .product {
@@ -425,15 +426,15 @@ nav a:hover::after {
   padding: 2vw 1.5vw;
   border-radius: 16px;
   background: #f9f8f8;
+  transition: 200ms;
 }
 .product img {
+  object-fit: contain;
   mix-blend-mode: multiply;
 }
-.product-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.product:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .product-title {
   display: flex;
@@ -445,8 +446,7 @@ nav a:hover::after {
 .product-title h5 {
   color: #fff;
   text-align: center;
-  font-family: "Open Sans";
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -459,17 +459,19 @@ nav a:hover::after {
   flex-direction: column;
   gap: 10px;
 }
-.product-img {
-  object-fit: cover;
+.product-content h6 {
+  font-size: 2.2rem;
 }
 .product-img img {
-  height: 20vw;
-  width: 23rem;
+  width: 230px;
+  height: 230px;
 }
 .product-rating {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #dedddd;
+}
+.product-rating h6 {
+  font-size: 1.5rem;
 }
 .product-rating img {
   width: 5vw;
@@ -479,7 +481,7 @@ nav a:hover::after {
   color: #b8b8b8;
   text-align: center;
   font-family: "Open Sans";
-  font-size: 1.3vw;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
