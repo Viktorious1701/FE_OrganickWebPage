@@ -87,10 +87,22 @@ body {
 }
 .listCard li img {
   width: 90%;
+  margin: 5px;
+  border-radius: 16px;
+}
+.listCard li img:hover {
+  transform: scale(1.05);
+  transition: 200ms;
 }
 .listCard li button {
   background-color: #fff5;
   border: none;
+}
+.listCard li button:hover {
+  background-color: #fff;
+  color: #274c5b;
+  transition: 200ms;
+  transform: scale(1.05);
 }
 .listCard .count {
   margin: 0 10px;
@@ -393,8 +405,8 @@ nav a:hover::after {
   border-radius: 1.6rem;
   margin-right: 0.5rem;
 }
-.about-icon img {
-  margin: auto;
+.about-title img {
+  width: 10%;
 }
 /*-------------------------------------- SHOP PRODUCTS ------------------------------------*/
 .shop {
@@ -460,7 +472,7 @@ nav a:hover::after {
   gap: 10px;
 }
 .product-content h6 {
-  font-size: 2.2rem;
+  text-wrap: nowrap;
 }
 .product-img img {
   width: 230px;

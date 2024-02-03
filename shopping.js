@@ -5,6 +5,11 @@ let body = document.querySelector("body");
 let total = document.querySelector(".total");
 let quantity = document.querySelector(".quantity");
 
+var quantityString = quantity.innerHTML; // "Cart(0)"
+var quantityValue = parseInt(quantityString.match(/\d+/)[0]); // Extracts the numeric value
+
+
+// Open and close shopping cart
 openShopping.addEventListener("click", () => {
   body.classList.add("active");
 });
@@ -45,8 +50,6 @@ function addVeggie() {
   const originalPrice = matches[1];
   const salePrice = matches[2];
 
-  console.log(originalPrice); // "20.00"
-  console.log(salePrice); // "13.00"// "sale price here"
   // Create new veggie object
   const newVeggie = {
     name: name,
@@ -63,13 +66,22 @@ function addVeggie() {
 
   // Add to veggies array
   vegetables.push(newVeggie);
+  console.log(calculateTotalPrice(vegetables));
+  total.innerHTML =
+    "Total: $" +
+    calculateTotalPrice(vegetables)
+      .reduce((a, b) => a + b.totalPrice, 0)
+      .toFixed(2);
 }
+
+
+
+
 
 // Rest of generateCard function and forEach loop
 // to initally load cards
 // Get the ul element
 const list = document.querySelector(".listCard");
-
 // Create a function to generate veggies cards
 function generateCard(veggie) {
   const li = document.createElement("li");
@@ -78,7 +90,7 @@ function generateCard(veggie) {
   li.innerHTML = `
     <div><img src="${veggie.image}" alt=""/></div>
     <div><p>${veggie.name}</p></div>
-    <div><p id="veggie-price">$${veggie.salePrice || 0}</p></div>
+    <div><p id="veggie-price">$${veggie.salePrice}</p></div>
     <div>
         <button class="decrease">-</button>
         <div class="count"><p>Quantity: ${veggie.quantity}</p></div>
@@ -86,46 +98,72 @@ function generateCard(veggie) {
     </div>
   `;
   //Update the number of items in the cart
-  quantity.innerHTML = "Cart(" + Number(vegetables.length + 1) + ")";
+  quantityValue += 1;
+  quantity.innerHTML = "Cart(" + Number(quantityValue) + ")";
+
   // Attach event listeners
   const decreaseBtn = li.querySelector(".decrease");
   const increaseBtn = li.querySelector(".increase");
 
+  //----------------------------------------------- NOT YET COMPLETE
   decreaseBtn.addEventListener("click", () => {
     veggie.quantity--;
 
     if (veggie.quantity === 0) {
       // Remove card if 0
+      //Update the number of items in the cart
+      quantityValue -= 1;
+      console.log(veggie.quantity);
+      quantity.innerHTML = "Cart(" + Number(quantityValue) + ")";
       list.removeChild(li);
     } else {
       // Just update quantity
+
       li.querySelector(".count p").textContent = `Quantity: ${veggie.quantity}`;
       updateTotalPrice(li, veggie);
+      total.innerHTML =
+        "Total: $" +
+        calculateTotalPrice(vegetables)
+          .reduce((a, b) => a + b.totalPrice, 0)
+          .toFixed(2);
     }
   });
 
   increaseBtn.addEventListener("click", () => {
     veggie.quantity++;
+
     li.querySelector(".count p").textContent = `Quantity: ${veggie.quantity}`;
     updateTotalPrice(li, veggie);
+    total.innerHTML =
+      "Total: $" +
+      calculateTotalPrice(vegetables)
+        .reduce((a, b) => a + b.totalPrice, 0)
+        .toFixed(2);
   });
- 
+
   return li;
 }
 
 // Update total price
 function updateTotalPrice(li, veggie) {
   const price = li.querySelector("#veggie-price");
-  price.textContent = `$${Number(veggie.quantity * veggie.salePrice).toFixed(
-    2
-  )}`;
+  let updatedPrice = Number(veggie.quantity * veggie.salePrice).toFixed(2);
+  price.textContent = `$${updatedPrice}`;
 }
 
 // Generate cards
 vegetables.forEach((veggie) => {
-  // Check if name exists
-  const exists = vegetables.some((v) => v.name === veggie.name);
-
   const card = generateCard(veggie);
   list.appendChild(card);
 });
+//Calculate the total price
+
+function calculateTotalPrice(vegetables) {
+  let totalPriceArray = [];
+  vegetables.forEach((veggie) => {
+    let totalPrice = veggie.quantity * veggie.salePrice;
+    totalPriceArray.push({ name: veggie.name, totalPrice: totalPrice });
+  });
+
+  return totalPriceArray;
+}

@@ -5,6 +5,9 @@
   .palette {
     display: none;
   }
+  .product-img img {
+    height: 60px;
+  }
   :root {
     font-size: 20%; /* Adjust the font size for smaller screens if needed */
   }
@@ -78,6 +81,7 @@
   :root {
     font-size: 30%; /* Adjust the font size for smaller screens if needed */
   }
+
   .content {
     margin: 0;
     position: absolute;
@@ -110,6 +114,10 @@
   .about-footer-title img {
     width: 10%;
   }
+  .product-img img {
+    height: 100px;
+  }
+
   /*subscribe*/
   .subscribe-content {
     gap: 0vw;
@@ -199,7 +207,9 @@
     padding: 2vw 3vw;
     border-radius: 1.6rem;
   }
-
+  .product-img img {
+    height: 115px;
+  }
   /* Responsive section*/
   /*** Header ***/
   .header {
