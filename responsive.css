@@ -2,6 +2,13 @@
 /*RESPONSIVE*/
 @media only screen and (max-width: 363px) {
   /* default value*/
+  .container {
+    padding: 0;
+  }
+  .banner {
+    padding-top: 110px;
+  }
+
   .palette {
     display: none;
   }
@@ -51,7 +58,7 @@
   .content {
     margin: 0;
     position: absolute;
-    top: 50rem;
+    top: 60rem;
     left: 20px;
   }
   /*About*/
@@ -81,12 +88,17 @@
   :root {
     font-size: 30%; /* Adjust the font size for smaller screens if needed */
   }
-
+  .container {
+    padding: 0;
+  }
   .content {
     margin: 0;
     position: absolute;
-    top: 35vw;
-    left: 5vw;
+    top: 35rem;
+    left: 5rem;
+  }
+  .banner {
+    padding-top: 100px;
   }
   .navbar {
     display: flex;
@@ -187,6 +199,12 @@
 @media only screen and (min-width: 600px) and (max-width: 850px) {
   :root {
     font-size: 40%; /* Adjust the font size for smaller screens if needed */
+  }
+  .container {
+    padding: 0;
+  }
+  .banner {
+    padding-top: 150px;
   }
   .body {
     overflow-x: hidden;

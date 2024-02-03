@@ -36,49 +36,59 @@ body {
 }
 .card {
   position: fixed;
-  top: 0;
+
   left: 100%;
   width: 500px;
-  background-color: #7eb693;
-  height: 100vh;
+  padding: 20px 20px 20px 0px;
+  background-color: #f1eff0;
+  height: 95vh;
   transition: 0.5s;
   z-index: 100;
   overflow: auto;
+  border-radius: 16px;
 }
-.card h1 {
-  justify-content: center;
+.closeShopping {
   display: flex;
   align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.closeShopping p {
+  font-weight: 700;
 }
 .card .checkOut {
-  position: sticky;
+  display: flex;
+  justify-content: center;
+  position: fixed;
   bottom: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 .card .checkOut div {
-  background-color: #274c5b;
-  width: 100%;
-  height: 70px;
+  background-color: #28596c;
+
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   font-size: 20px;
+  color: white;
 }
 .card .checkOut div:nth-child(2) {
   background-color: #525c60;
   color: #fff;
 }
+.card .checkOut div:nth-child(2):hover {
+  background-color: #f9f8f8;
+  color: #525c60;
+  transition: 200ms;
+}
 .active .card {
   left: calc(100% - 500px);
 }
+
 .listCard li {
   display: grid;
   grid-template-columns: 100px repeat(3, 1fr);
   color: #fff;
-  row-gap: 10px;
 }
 .listCard li div {
   display: flex;
@@ -282,6 +292,7 @@ nav a:hover::after {
   z-index: 0;
 }
 #onion {
+  top: 10rem;
   width: 10vw;
   z-index: 3;
 }
@@ -474,6 +485,9 @@ nav a:hover::after {
 .product-content h6 {
   text-wrap: nowrap;
 }
+.product-content h6 {
+  font-size: 1vw;
+}
 .product-img img {
   width: 230px;
   height: 230px;
@@ -483,7 +497,7 @@ nav a:hover::after {
   justify-content: space-between;
 }
 .product-rating h6 {
-  font-size: 1.5rem;
+  font-size: 1vw;
 }
 .product-rating img {
   width: 5vw;
