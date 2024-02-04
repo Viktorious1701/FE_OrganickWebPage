@@ -36,12 +36,11 @@ body {
 }
 .card {
   position: fixed;
-
   left: 100%;
   width: 500px;
-  padding: 20px 20px 20px 0px;
+  padding: 20px 20px 20px 20px;
   background-color: #f1eff0;
-  height: 95vh;
+  height: 100vh;
   transition: 0.5s;
   z-index: 100;
   overflow: auto;
@@ -116,6 +115,9 @@ body {
 }
 .listCard .count {
   margin: 0 10px;
+}
+.total {
+  padding: 20px;
 }
 /*-------------------Navigation Bar-----------------------*/
 .header {
