@@ -88,6 +88,7 @@ body {
   display: grid;
   grid-template-columns: 100px repeat(4, 1fr);
   color: #fff;
+  column-gap: 5px;
 }
 .listCard li div {
   display: flex;

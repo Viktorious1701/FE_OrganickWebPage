@@ -116,6 +116,12 @@ function generateCard(veggie) {
       console.log(veggie.quantity);
       quantity.innerHTML = "Cart(" + Number(quantityValue) + ")";
       list.removeChild(li);
+      total.innerHTML =
+        "Total: $" +
+        calculateTotalPrice(vegetables)
+          .reduce((a, b) => a + b.totalPrice, 0)
+          .toFixed(2);
+
     } else {
       // Just update quantity
 
