@@ -86,7 +86,7 @@ body {
 
 .listCard li {
   display: grid;
-  grid-template-columns: 100px repeat(3, 1fr);
+  grid-template-columns: 100px repeat(4, 1fr);
   color: #fff;
 }
 .listCard li div {

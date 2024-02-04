@@ -28,7 +28,7 @@ body {
   object-fit: cover;
 }
 .shop-title-page h1 {
-  z-index: 9999;
+  z-index: 1;
   position: absolute;
   top: 20rem;
   left: 43%;

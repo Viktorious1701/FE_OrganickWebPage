@@ -89,7 +89,6 @@
   }
   .listCard li {
     grid-template-columns: repeat(4, 50px);
-    column-gap: 10px;
   }
   /*SHOP*/
   .shop-title-page {
@@ -220,7 +219,6 @@
   }
   .listCard li {
     grid-template-columns: repeat(4, 50px);
-    column-gap: 10px;
   }
   /*SHOP*/
   .shop-banner {
@@ -425,6 +423,7 @@
   .shop-title-page h1 {
     top: 30rem;
   }
+  
 }
 
 /* NAVIGATION BAR*/
