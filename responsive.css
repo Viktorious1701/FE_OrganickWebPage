@@ -70,11 +70,13 @@
     width: 10%;
   }
   .subscribe-content {
-    position: relative;
+    position: absolute;
     gap: 0vw;
-    left: -5rem;
+    left: 3rem;
   }
-
+  .subscribe-content .subscribe-text h3 {
+    font-size: 1.8rem;
+  }
   .email-input input {
     border: none;
     outline: none;
@@ -93,6 +95,10 @@
   /*SHOP*/
   .shop-title-page {
     display: none;
+  }
+  /*Subscribe*/
+  .subscribe-text h3 {
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 600px) and (min-width: 363px) {
@@ -151,7 +157,10 @@
     gap: 0vw;
     left: 0rem;
   }
-
+  /*Subscribe*/
+  .subscribe-content .subscribe-text h3 {
+    font-size: 1.8rem;
+  }
   .email-input input {
     border: none;
     outline: none;
@@ -342,7 +351,7 @@
     font-size: 0.8vw;
     top: 5vw;
   }
-  /*Subscribe*/
+
   .subscribe h6 {
     font-size: 1.8vw;
   }
@@ -423,7 +432,6 @@
   .shop-title-page h1 {
     top: 30rem;
   }
-  
 }
 
 /* NAVIGATION BAR*/
