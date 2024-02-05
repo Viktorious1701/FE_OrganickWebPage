@@ -8,7 +8,6 @@ let quantity = document.querySelector(".quantity");
 var quantityString = quantity.innerHTML; // "Cart(0)"
 var quantityValue = parseInt(quantityString.match(/\d+/)[0]); // Extracts the numeric value
 
-
 // Open and close shopping cart
 openShopping.addEventListener("click", () => {
   body.classList.add("active");
@@ -51,32 +50,43 @@ function addVeggie() {
   const salePrice = matches[2];
 
   // Create new veggie object
-  const newVeggie = {
-    name: name,
-    quantity: 1,
-    image: image,
-    salePrice: salePrice,
-  };
+  // Check if the product already exists in the vegetables array
+  const existingVeggieIndex = vegetables.findIndex((v) => v.name === name);
 
-  // Generate card
-  const card = generateCard(newVeggie);
+  if (existingVeggieIndex !== -1) {
+    // If the product already exists, increase its quantity
+    vegetables[existingVeggieIndex].quantity++;
+    const existingCard = list.querySelector(`[data-name="${name}"]`);
+    existingCard.querySelector(
+      ".count p"
+    ).textContent = `Quantity: ${vegetables[existingVeggieIndex].quantity}`;
+    updateTotalPrice(existingCard, vegetables[existingVeggieIndex]);
+  } else {
+    // Create new veggie object
+    const newVeggie = {
+      name: name,
+      quantity: 1,
+      image: image,
+      salePrice: salePrice,
+    };
 
-  // Add to DOM
-  list.appendChild(card);
+    // Generate card
+    const card = generateCard(newVeggie);
+    card.setAttribute("data-name", name); // Set attribute to identify card by product name
 
-  // Add to veggies array
-  vegetables.push(newVeggie);
-  console.log(calculateTotalPrice(vegetables));
+    // Add to DOM
+    list.appendChild(card);
+
+    // Add to veggies array
+    vegetables.push(newVeggie);
+  }
+
   total.innerHTML =
     "Total: $" +
     calculateTotalPrice(vegetables)
       .reduce((a, b) => a + b.totalPrice, 0)
       .toFixed(2);
 }
-
-
-
-
 
 // Rest of generateCard function and forEach loop
 // to initally load cards
@@ -105,7 +115,6 @@ function generateCard(veggie) {
   const decreaseBtn = li.querySelector(".decrease");
   const increaseBtn = li.querySelector(".increase");
 
-  //----------------------------------------------- NOT YET COMPLETE
   decreaseBtn.addEventListener("click", () => {
     veggie.quantity--;
 
@@ -115,13 +124,15 @@ function generateCard(veggie) {
       quantityValue -= 1;
       console.log(veggie.quantity);
       quantity.innerHTML = "Cart(" + Number(quantityValue) + ")";
+      //find the product that has set to 0 quantity and remove it from the list
+      const indexToRemove = vegetables.findIndex((v) => v.name === veggie.name);
+      vegetables.splice(indexToRemove, 1);
       list.removeChild(li);
       total.innerHTML =
         "Total: $" +
         calculateTotalPrice(vegetables)
           .reduce((a, b) => a + b.totalPrice, 0)
           .toFixed(2);
-
     } else {
       // Just update quantity
 
