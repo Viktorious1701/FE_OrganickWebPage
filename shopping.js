@@ -8,6 +8,7 @@ let quantity = document.querySelector(".quantity");
 var quantityString = quantity.innerHTML; // "Cart(0)"
 var quantityValue = parseInt(quantityString.match(/\d+/)[0]); // Extracts the numeric value
 
+
 // Open and close shopping cart
 openShopping.addEventListener("click", () => {
   body.classList.add("active");
@@ -59,7 +60,7 @@ function addVeggie() {
     const existingCard = list.querySelector(`[data-name="${name}"]`);
     existingCard.querySelector(
       ".count p"
-    ).textContent = `Quantity: ${vegetables[existingVeggieIndex].quantity}`;
+    ).textContent = ` ${vegetables[existingVeggieIndex].quantity}`;
     updateTotalPrice(existingCard, vegetables[existingVeggieIndex]);
   } else {
     // Create new veggie object
@@ -95,15 +96,16 @@ const list = document.querySelector(".listCard");
 // Create a function to generate veggies cards
 function generateCard(veggie) {
   const li = document.createElement("li");
+  const shortName = veggie.name.split(" ")[0];
 
   // Card contents
   li.innerHTML = `
     <div><img src="${veggie.image}" alt=""/></div>
-    <div><p>${veggie.name}</p></div>
+    <div><p>${shortName}</p></div>
     <div><p id="veggie-price">$${veggie.salePrice}</p></div>
     <div>
         <button class="decrease">-</button>
-        <div class="count"><p>Quantity: ${veggie.quantity}</p></div>
+        <div class="count"><p> ${veggie.quantity}</p></div>
         <button class="increase">+</button>
     </div>
   `;
@@ -136,7 +138,7 @@ function generateCard(veggie) {
     } else {
       // Just update quantity
 
-      li.querySelector(".count p").textContent = `Quantity: ${veggie.quantity}`;
+      li.querySelector(".count p").textContent = ` ${veggie.quantity}`;
       updateTotalPrice(li, veggie);
       total.innerHTML =
         "Total: $" +
@@ -149,7 +151,7 @@ function generateCard(veggie) {
   increaseBtn.addEventListener("click", () => {
     veggie.quantity++;
 
-    li.querySelector(".count p").textContent = `Quantity: ${veggie.quantity}`;
+    li.querySelector(".count p").textContent = ` ${veggie.quantity}`;
     updateTotalPrice(li, veggie);
     total.innerHTML =
       "Total: $" +

@@ -487,6 +487,7 @@ nav a:hover::after {
 }
 .product-content h6 {
   text-wrap: nowrap;
+  text-overflow: ellipsis;
 }
 .product-content h6 {
   font-size: 1vw;
@@ -653,12 +654,19 @@ nav a:hover::after {
 }
 .who-content {
   display: flex;
+  background-color: #fff;
+  border-radius: 2.5rem;
+
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
   width: 50%;
-  margin: 5vw 0;
   z-index: 1;
+  padding: 5vw 3vw;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
 }
 .who-content h3 {
   font-weight: bolder;
@@ -676,17 +684,7 @@ nav a:hover::after {
   flex-direction: column;
   gap: 2rem;
 }
-.white-layout {
-  position: absolute;
-  background-color: #ffffff;
-  border: 1px solid white;
-  border-radius: 1.6rem;
 
-  padding: 21vw 10vw;
-  z-index: 1;
-  top: 3vw;
-  left: 45vw;
-}
 /*--------------------------Gallery---------------------------*/
 .gallery {
   display: flex;
